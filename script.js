@@ -24,7 +24,7 @@ const arrayFiguras = [figura1, figura2, figura3, figura4, figura5, figura6]
 function buscarFigura(arrayFiguras) {
     let nombreFigura = prompt("Ingrese el nombre de la figura")
     
-    let figuraEncontrada = arrayFiguras.filter(figura => figura.nombre == nombreFigura)
+    let figuraEncontrada = arrayFiguras.find(figura => figura.nombre == nombreFigura)
 
         if(figuraEncontrada == undefined) {
             alert("Figura no encontrada")
